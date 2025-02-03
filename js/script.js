@@ -67,8 +67,7 @@ document.getElementById('calculate-savings').addEventListener('click', function(
 
 document.getElementById('assistant-tab').addEventListener('click', function(){
     setSectionValue('assistant-tab');
-    document.getElementById('history-section').classList.add('hidden')
-    document.getElementById('expense-form').classList.remove('hidden');
+    setSectionClass('expense-form');
     
 })
 
@@ -77,7 +76,6 @@ document.getElementById('history-tab').addEventListener('click', function(){
     setSectionValue('history-tab');
 
     // show the history-section 
-    document.getElementById('history-section').classList.remove('hidden')
-    document.getElementById('expense-form').classList.add('hidden');
+    setSectionClass('history-section')
 
 })
